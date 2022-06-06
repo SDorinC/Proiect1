@@ -1,0 +1,52 @@
+<form style="width: fit-content;">
+    <input name="subject" type="hidden" value="Class" />
+    <fieldset>
+        <legend>Informatii Studii Universitare</legend>
+        <label for="degree">Studii</label>
+        <select style="margin-bottom: 10px;" name="degree" id="degree">
+            <option hidden disabled selected value> -- alege domeniul de studiu -- </option>
+            <option value="1">Facultatea de Stiinte Economice</option>
+            <option value="2">Facultatea de Informatica</option>
+            <option value="3">Facultatea de Medicina</option>
+            <option value="4">Facultatea de Educatie Fizica</option>
+        </select>
+        <br />
+        <label for="studentid">ID Student</label>
+        <input style="margin-bottom: 10px;" type="password" name="studentid" id="studentid" />
+        <br />
+        <label style="display: inline-block;vertical-align: middle;" for="cursuri">Cursuri Urmate</label>
+        <select style="display: inline-block;vertical-align: middle;" multiple name="cursuri" id="cursuri">
+            <option value="1">Contabilitate</option>
+            <option value="2">Matematica</option>
+            <option value="3">Engleza</option>
+            <option value="4">Statistica</option>
+            <option value="5">Informatica</option>
+            <option value="6">Educatie Fizica</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Informatii Student</legend>
+        <label style="width:60px;display: inline-block;" for="nume">Nume</label>
+        <input style="margin-bottom: 5;" type="text" name="nume" id="nume" />
+        <br />
+        <label style="width:60px;display: inline-block;" for="prenume">Prenume</label>
+        <input style="margin-bottom: 5;" type="text" name="prenume" id="prenume" />
+        <br />
+        <label style="width:60px;display: inline-block;" for="email">Email</label>
+        <input style="margin-bottom: 5;" type="text" name="email" id="email" />
+        <br />
+        Gen:
+        <input name="gen" type="radio" id="b" value="b" />
+        <label for="b">Barbat</label>
+        <input name="gen" type="radio" id="f" value="f" />
+        <label for="f">Femeie</label>
+    </fieldset>
+    <fieldset>
+        <legend>Termene Si Conditii</legend>
+        <textarea name="tc" cols="30" rows="4" readonly="readonly">TERMENE SI CONDITII...</textarea>
+        <br />
+        <br />
+        <input type="submit" name="submit" value="Trimite" />
+        <input type="reset" value="Sterge tot" />
+    </fieldset>
+</form>
